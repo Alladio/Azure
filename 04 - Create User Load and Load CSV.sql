@@ -60,7 +60,7 @@ GRANT SELECT ON logdata TO user_load;
 SELECT * FROM [logdata]
 
 -- Here there is no authentication/authorization, so you need to allow public access for the container
-COPY INTO logdata FROM 'https://appdatalake7000.blob.core.windows.net/data/Log.csv'
+COPY INTO logdata FROM 'https://datalakealladio1.blob.core.windows.net/data/Log.csv'
 WITH
 (
 FIRSTROW=2

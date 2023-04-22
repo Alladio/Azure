@@ -26,7 +26,7 @@ CREATE TABLE [logdata]
 GRANT INSERT ON logdata TO user_load;
 GRANT SELECT ON logdata TO user_load;
 
-COPY INTO [logdata] FROM 'https://appdatalake7000.blob.core.windows.net/data/parquet/*.parquet'
+COPY INTO [logdata] FROM 'https://datalakealladio1.blob.core.windows.net/data/parquet/*.parquet'
 WITH
 (
 FILE_TYPE='PARQUET',
